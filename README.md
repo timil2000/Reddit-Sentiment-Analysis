@@ -1,4 +1,3 @@
-cat <<EOL > README.md
 # 📊 Reddit Sentiment Analysis Project
 
 This project performs **Sentiment Analysis** on Reddit data by:
@@ -20,7 +19,8 @@ This project performs **Sentiment Analysis** on Reddit data by:
 ---
 
 ## 📂 Project Structure
-\`\`\`
+
+```
 SentimentAnalysisProject/
 │
 ├── data/                    # Stores raw & processed data
@@ -45,59 +45,61 @@ SentimentAnalysisProject/
 ├── README.md                # Project documentation
 ├── Procfile                 # Deployment file for Heroku
 └── app.py                   # Flask app entry point
-\`\`\`
+```
 
 ---
 
 ## 🛠️ Installation
-1️⃣ **Clone the repository**
-   \`\`\`bash
-   git clone <your-repo-url>
+### **1️⃣ Clone the repository**
+```bash
+   git clone https://github.com/timil2000/Reddit-Sentiment-Analysis
    cd Reddit-Sentiment-Analysis
-   \`\`\`
+```
 
-2️⃣ **Install dependencies**
-   \`\`\`bash
+### **2️⃣Install the dependencies**
+```bash
    pip install -r requirements.txt
-   \`\`\`
+```
 
-3️⃣ **Run locally**
-   \`\`\`bash
+### **3️⃣ Run locally**
+```bash
    python scripts/deploy_app.py
-   \`\`\`
+```
 
 ---
 
 ## 🌎 Deployment (Heroku & AWS)
-**To deploy on Heroku**:
-\`\`\`bash
-heroku login
-heroku create sentiment-analysis-app
-git push heroku main
-heroku open
-\`\`\`
+### Deploy on Heroku
+```bash
+   heroku login
+   heroku create sentiment-analysis-app
+   git push heroku main
+   heroku open
+```
 
-**To deploy on AWS (EC2)**:
-\`\`\`bash
-ssh -i your-key.pem ubuntu@your-ec2-ip
-cd SentimentAnalysisProject
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-gunicorn --bind 0.0.0.0:5000 scripts.deploy_app:app
-\`\`\`
-
----
-
-## 📊 Example Screenshot
-![Sentiment Chart](scripts/static/sentiment_chart.png)
-
----
+### Deploy on AWS(EC2)
+```bash
+   ssh -i your-key.pem ubuntu@your-ec2-ip
+   cd SentimentAnalysisProject
+   python3 -m venv venv
+   source venv/bin/activate
+   pip install -r requirements.txt
+   gunicorn --bind 0.0.0.0:5000 scripts.deploy_app:app
+```
 
 ## 🤝 Contributing
-1. **Fork the repo**
-2. **Create a new branch** (\`feature-branch\`)
-3. **Commit your changes**
-4. **Push and submit a PR**
+   - Fork the repo
+   - Create a new branch (feature-branch)
+   - Commit your changes
+   - Push and submit a PR
 
----
+
+
+
+
+
+
+
+
+
+
