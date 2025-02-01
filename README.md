@@ -48,6 +48,10 @@ SentimentAnalysisProject/
 ```
 
 ---
+## 📊 Example Screenshot
+![sentiment_chart](https://github.com/user-attachments/assets/29b4b6e4-d3bd-4d9b-b2af-16d482464e8f)
+
+
 
 ## 🛠️ Installation
 ### **1️⃣ Clone the repository**
